@@ -1,0 +1,18 @@
+!!com.aptana.scripting.model.BundleElement
+author: null
+children: []
+copyright: null
+customProperties: null
+decreaseIndentMarkers: &id001 {}
+description: null
+displayName: Yii Ruble
+fileTypeRegistry: *id001
+fileTypes: []
+foldingStartMarkers: *id001
+foldingStopMarkers: *id001
+increaseIndentMarkers: *id001
+license: null
+licenseUrl: null
+path: bundle.rb
+repository: null
+visible: true
