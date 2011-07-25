@@ -10,7 +10,7 @@ if(!Yii::app()->request->${1://request type}){
   ${2://TODO something like:throw new CHttpException()}
 }    
 '
-  end
+ end
   
   #Controller:Render
   #
