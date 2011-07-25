@@ -56,7 +56,7 @@ children:
   displayName: Yii
   path: bundle.rb
   scope: null
-- !!com.aptana.scripting.model.CommandElement
+- !command
   async: false
   customProperties: null
   displayName: Swap Case
@@ -69,7 +69,7 @@ children:
   runType: current_thread
   scope: null
   workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement
+- !command
   async: false
   customProperties: null
   displayName: Paste and Swap Case
@@ -83,7 +83,7 @@ children:
   runType: current_thread
   scope: source.php
   workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement
+- !command
   async: false
   customProperties: null
   displayName: Copy and Swap Case
@@ -99,14 +99,14 @@ children:
   workingDirectoryType: UNDEFINED
 copyright: null
 customProperties: {scope: source.php}
-decreaseIndentMarkers: &id002 {}
+decreaseIndentMarkers: {}
 description: null
 displayName: Yii Ruble
-fileTypeRegistry: *id002
-fileTypes: *id001
-foldingStartMarkers: *id002
-foldingStopMarkers: *id002
-increaseIndentMarkers: *id002
+fileTypeRegistry: {}
+fileTypes: []
+foldingStartMarkers: {}
+foldingStopMarkers: {}
+increaseIndentMarkers: {}
 license: null
 licenseUrl: null
 path: bundle.rb
