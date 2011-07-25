@@ -1,8 +1,82 @@
 !!com.aptana.scripting.model.BundleElement
 author: null
-children: []
+children:
+- !!com.aptana.scripting.model.CommandElement
+  async: false
+  customProperties: null
+  displayName: Swap Case
+  input: [selection, word]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: replace_selection
+  path: commands/commands.rb
+  runType: current_thread
+  scope: null
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.CommandElement
+  async: false
+  customProperties: null
+  displayName: Paste and Swap Case
+  input: [clipboard]
+  inputPath: null
+  keyBindingMap:
+    !!com.aptana.scripting.model.Platform 'ALL': [M1+M2+V]
+  outputPath: null
+  outputType: insert_as_text
+  path: commands/commands.rb
+  runType: current_thread
+  scope: source.php
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.CommandElement
+  async: false
+  customProperties: null
+  displayName: Copy and Swap Case
+  input: [selection]
+  inputPath: null
+  keyBindingMap:
+    !!com.aptana.scripting.model.Platform 'ALL': [M1+M2+C]
+  outputPath: null
+  outputType: copy_to_clipboard
+  path: commands/commands.rb
+  runType: current_thread
+  scope: source.php
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [befsave]
+  displayName: Model:Before Save
+  expansion: "\npublic function beforeSave()\n{\n     if(parent::beforeSave()){\n\
+    \      if(\\$this->isNewRecord){\n        ${2://TODO something if it's new record}\n\
+    \      }else{\n        ${3://TODO something}\n      }\n      return true;\n  \
+    \   }  \n     return false;\n}"
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: source.php
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [relate]
+  displayName: Model:Relation
+  expansion: '''${1:name}''=>array(self::${2:relation},''${3:Model}'',''${4:key}'',''condition''=>''${5:condition}''),'
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: source.php
+  workingDirectoryType: UNDEFINED
 copyright: null
-customProperties: null
+customProperties: {scope: source.php}
 decreaseIndentMarkers: &id001 {}
 description: null
 displayName: Yii Ruble

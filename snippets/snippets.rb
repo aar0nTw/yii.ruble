@@ -1,6 +1,8 @@
-snippet 'Model:Before Save' do |snip|
-  snip.trigger = 'befsave'
-  snip.expansion = '
+with_defaults :scope => 'source.php' do
+  snippet 'Model:Before Save' do |snip|
+    #snip.scope = 'source.php'
+    snip.trigger = 'befsave'
+    snip.expansion = '
 public function beforeSave()
 {
      if(parent::beforeSave()){
@@ -13,9 +15,12 @@ public function beforeSave()
      }  
      return false;
 }'
-end
+  end
 
-snippet 'Model:Relation' do |snip|
-  snip.trigger = 'relate'
-  snip.expansion ='\'${1:name}\'=>array(self::${2:relation},\'${3:Model}\',\'${4:key}\',\'condition\'=>\'${5:condition}\'),'
+  snippet 'Model:Relation' do |snip| #Model class relation snippet
+   # snip.scope = 'source.php'
+    snip.trigger = 'relate'
+    snip.expansion ='\'${1:name}\'=>array(self::${2:relation},\'${3:Model}\',\'${4:key}\',\'condition\'=>\'${5:condition}\'),'
+  end
+  
 end
