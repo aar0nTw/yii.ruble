@@ -12,9 +12,15 @@ bundle do |bundle|
       sub_menu.command 'Swap Case'
     end
     
-    main_menu.menu 'Snippets' do |sub_menu|
+    main_menu.menu 'Models' do |sub_menu|
       sub_menu.command 'Model:Before Save'
       sub_menu.command 'Model:Relation'
+    end
+    
+    main_menu.menu 'Controller' do |sub_menu|
+      sub_menu.command 'Controller:Render'
+      sub_menu.command 'Controller:Render with var'
+      sub_menu.command 'Controller:Request Type'
     end
   end
 end
