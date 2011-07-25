@@ -23,11 +23,22 @@ if(!Yii::app()->request->${1://request type}){
   end
   
   #Controller:Render with var
+  #
   
   snippet 'Controller:Render with var' do |snip|
     snip.trigger = 'render'
     snip.expansion = '\$this->render(\'${1:view}\',array(
         \'${2:key}\'=>\'${3:value}\'
 ));'
+  end
+  
+  snippet 'Controller:Action' do |snip|
+    snip.trigger = 'action'
+    snip.expansion = '
+public function action${1:Name}()
+{
+   \$this->render(\'${2:view}\');
+}    
+'
   end
 end
