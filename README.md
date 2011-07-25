@@ -1,6 +1,5 @@
-Yii RUBy bundLE
-===============
-by [Aaron Huang]<http://buginception.com>
+#Yii RUBy bundLE#
+###by Aaron Huang<http://buginception.com>###
 ---------------
 # YiiFramework #
 YiiFramework is a php framework, you can visit here:
