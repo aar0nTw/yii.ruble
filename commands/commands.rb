@@ -31,3 +31,32 @@ command 'Copy and Swap Case' do |cmd|
     word.swapcase
   end
 end
+
+#Search in YiiFramework.com
+
+command 'Search in Yii...' do |cmd|
+  cmd.key_binding = 'CONTROL+H'
+  cmd.scope = 'source.php'
+  cmd.output = :show_as_html
+  cmd.input = :selection, :word
+  cmd.invoke do |context|
+    word = STDIN.read
+    url = "http://www.yiiframework.com/search/?q=" + word
+    "<meta http-equiv='Refresh' content='0;URL=#{url}'>"
+  end
+end
+
+#Search in Yii ClassRef
+
+command 'Search in Yii ClassRef...' do |cmd|
+  cmd.key_binding = 'CONTROL+SHIFT+H'
+  cmd.scope = 'source.php'
+  cmd.output = :show_as_html
+  cmd.input = :selection, :word
+  cmd.invoke do |context|
+    word = STDIN.read
+    url = "http://www.yiiframework.com/doc/api/1.1/" + word
+    "<meta http-equiv='Refresh' content='0;URL=#{url}'>"
+  end
+end
+

@@ -4,7 +4,10 @@ bundle do |bundle|
   bundle.author = "Aaron Huang"
   bundle.scope = "source.php"
   bundle.display_name = 'Yii Ruble'
+  bundle.repository = "git://github.com/aar0nTw/yii.ruble.git"
   bundle.menu 'Yii' do |main_menu|
+    main_menu.command 'Search in Yii...'
+    main_menu.command 'Search in Yii ClassRef...'
     main_menu.command 'Paste and Swap Case'
     main_menu.command 'Copy and Swap Case'
     main_menu.separator
