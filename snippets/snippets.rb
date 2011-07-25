@@ -22,5 +22,26 @@ public function beforeSave()
     snip.trigger = 'relate'
     snip.expansion ='\'${1:name}\'=>array(self::${2:relation},\'${3:Model}\',\'${4:key}\',\'condition\'=>\'${5:condition}\'),'
   end
+
+  #Controller:Request Type
+  #
+    
+  snippet 'Controller:Request Type' do |snip|
+    snip.trigger = 'request'
+    snip.expansion = '
+if(!Yii::app()->request->${1://request type}){
+  ${2://TODO something like:throw new CHttpException()}
+}    
+'
+  end
   
+  #Controller:Render
+  #
+  
+  snippet 'Controller:Render' do |snip|
+    snip.trigger = '$this->render'
+    snip.expansion = '
+\$this->render(\'${1:view}\');
+'
+  end
 end
