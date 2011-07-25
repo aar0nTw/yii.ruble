@@ -97,6 +97,74 @@ children:
   runType: current_thread
   scope: source.php
   workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [befsave]
+  displayName: Model:Before Save
+  expansion: "\npublic function beforeSave()\n{\n     if(parent::beforeSave()){\n\
+    \      if(\\$this->isNewRecord){\n        ${2://TODO something if it's new record}\n\
+    \      }else{\n        ${3://TODO something}\n      }\n      return true;\n  \
+    \   }  \n     return false;\n}"
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: source.php
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [relate]
+  displayName: Model:Relation
+  expansion: '''${1:name}''=>array(self::${2:relation},''${3:Model}'',''${4:key}'',''condition''=>''${5:condition}''),'
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: source.php
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [request]
+  displayName: Controller:Request Type
+  expansion: "\nif(!Yii::app()->request->${1://request type}){\n  ${2://TODO something\
+    \ like:throw new CHttpException()}\n}    \n"
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: source.php
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [$this->render]
+  displayName: Controller:Render
+  expansion: '
+
+    \$this->render(''${1:view}'');
+
+    '
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: source.php
+  workingDirectoryType: UNDEFINED
 copyright: null
 customProperties: {scope: source.php}
 decreaseIndentMarkers: {}
