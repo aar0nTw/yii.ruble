@@ -21,6 +21,7 @@ bundle do |bundle|
       sub_menu.command 'Controller:Render'
       sub_menu.command 'Controller:Render with var'
       sub_menu.command 'Controller:Request Type'
+      sub_menu.command 'Controller:Action'
     end
   end
 end
