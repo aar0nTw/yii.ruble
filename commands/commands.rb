@@ -60,3 +60,20 @@ command 'Search in Yii ClassRef...' do |cmd|
   end
 end
 
+#Visit the author's twitter.
+command 'Visit author\'s blog.' do |cmd|
+  cmd.output = :show_as_html
+  cmd.invoke do |context|
+    url = "http://buginception.com"
+    "<meta http-equiv='Refresh' content='0;URL=#{url}'>"
+  end
+end
+
+command 'View this project on github.' do |cmd|
+  cmd.output = :show_as_html
+  cmd.invoke do |context|
+    url = "https://github.com/aar0nTw/yii.ruble"
+    "<meta http-equiv='Refresh' content='0;URL=#{url}'>"
+  end
+end
+

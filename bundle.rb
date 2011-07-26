@@ -26,6 +26,12 @@ bundle do |bundle|
       sub_menu.command 'Controller:Render with var'
       sub_menu.command 'Controller:Request Type'
       sub_menu.command 'Controller:Action'
+      sub_menu.separator
+      sub_menu.command 'Add a Criteria setting'
     end
+    
+    main_menu.separator
+    main_menu.command 'Visit author\'s blog.'
+    main_menu.command 'View this project on github.'
   end
 end
