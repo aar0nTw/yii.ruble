@@ -15,7 +15,7 @@ bundle do |bundle|
       sub_menu.command 'Swap Case'
     end
     main_menu.separator
-    main_menu.command 'params[\'...\']'
+    main_menu.command 'params[...]'
     main_menu.menu 'Models' do |sub_menu|
       sub_menu.command 'Model:Before Save'
       sub_menu.command 'Model:Relation'
